@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#cuerpo{
+    display: flex;
+    width: 90%;
+    padding-left: 8%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: justify;
+    justify-content: space-between;
+    line-height: 1.7;
+    font-size: 18px;
+}
+.contenido{
+    width: 75%;
+    border-radius: 3px;
+    width: 75%;
+    background: #ffffff;
+    -webkit-box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+}
+
+#inicio, #howto, #invertir, #origen, #legalidad{
+    margin: 20px;
+}
+#navegacion{
+    background-color: darkred;
+    width: 100%; 
+    justify-content: space-between;
+    display: flex;   
+}
+#brand{
+    font-size: 20px;
+    padding: 0 18px;
+    color: rgb(240, 223, 223);
+    float: left;
+    user-select: none;
+    align-items: center;
+    display: flex;
+}
+#navegacion ol{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+#navegacion ol li{
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+}
+#navegacion ol li a {
+    color: rgb(240, 223, 223);
+    text-decoration: none;
+    padding: 15px 18px;
+    display: table;    
+}
+#navegacion ol li a:hover{
+    color:rgb(0, 0, 0);
+    background-color: white;
+}
+.encabezado{
+    background-image: url(img/banner3.png);
+    width: 100%;
+    height: 350px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    user-select: none;
+}
+
+table{
+    border-collapse: collapse;
+}
+td, th {
+    border: black 1px solid;
+    padding:0.2em 0.4em;
+}
+h1{
+    text-align: left;
+    padding-top: 15px;
+}
+
+#container {
+    display: block;
+    margin: auto 180px auto auto;
+    width: 100%;
+    background: #ecf0f5;
+}
+#legalidad li{
+    margin-top: 10px;
+}
+#pie{
+    width: 100%;
+    height: 100px;
+    background-color: #151548;
+    text-align: center;
+    align-content: center;
+    padding-top: 8px;
+    color: #b3b7db;
+    float: none;
+    clear: both;
+    
+}    
+#adlateral {
+    display: block;
+    width: 160px;
+    height: 400px;
+    border: 1px solid #eee;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/banner.jpg);
+    right: 2px;
+    top: 100px;
+    position: fixed;
+    
+}
+.bannertext a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    margin-top: 10px; 
+}
+
+.bannertext p{
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.bannertext1{
+    display: none;
+}
+.bannertext2{
+    display: none;
+}
+
+#responsive{
+    display: none;
+}
+
+    @media only screen and (max-width: 760px){
+        #adlateral{
+            display: none !important;
+        }
+        .bannertext1{
+            display: block;
+        }
+        .contenido {
+            width: 90%;
+        }
+        #adbottommid{
+            width: 100%;
+            height: 105px;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(img/bannermid.jpg);
+            left: 0;
+            bottom: 0;
+            position: fixed;
+            display: flex !important;
+            align-items: center;
+        }
+        #adbottommid p {
+            text-align: center;
+            color: white;
+            margin: 0 0 0 5px;
+            width: 44%;
+        }
+        #pie{
+            margin-bottom: 100px;
+        }
+        
+    }
+   @media only screen and (max-width: 580px) {
+        #adlateral {
+            display:none!important;
+        }
+        
+        .bannertext1{
+            display: none;
+        }
+        .bannertext2{
+            display: block;
+        }
+        #adsmall{
+            width: 100%;
+            height: 100%;
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(img/bannerxs.jpg);
+            left: 0;
+            max-height: 130px;
+            bottom: 0;
+            position: fixed;
+        }
+        .contenido {
+            width: 90%;
+        }
+        #navegacion{
+            display: none;
+        }
+        #subseccion1 { 
+            position: absolute;
+            top: 100%;
+            left: 0px;
+            background-color: #8b0000;
+            list-style-type: none;
+            display: none;
+            padding: 0;
+       }
+       ul {
+        margin: 0;
+        }
+       #seccion { 
+           margin: 0px 5px;
+           padding:15px 18px; 
+           width: 12%;
+           float: left;
+           list-style-type: none;
+           position: relative; 
+         }
+         #seccion li {
+            padding: 15px 2px;
+            border-top: 1px solid #eee;
+        }
+        #responsive{
+            background-color: darkred;
+            width: 100%; 
+            justify-content: space-between;
+            display: flex; 
+        }
+        
+        
+        #subseccion1 :hover {
+            background-color: white;
+            
+        }
+
+        #subseccion1 li :hover{
+            color: rgb(0, 0, 0);
+        }
+        #responsive ul li a{
+            color: rgb(240, 223, 223);
+            text-decoration: none;
+            padding: 16px 18px;
+        }
+        #pie{
+            margin-bottom: 100px;
+        }
+    }
+    
+    
